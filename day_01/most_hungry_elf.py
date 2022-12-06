@@ -11,4 +11,8 @@ with open("./example_data_from_aoc_webpage.txt", 'r') as food_calories_data:
             continue
         totall_intake_of_current_elve += int(single_food_calories.strip())
 
+# Part #01
 print(sorted(elve_calories_intake, reverse=True)[0])
+
+# Part #02
+print(sum(sorted(elve_calories_intake, reverse=True)[0:3]))
